@@ -1,3 +1,5 @@
+If you are viewing this from the docker hub page the please follow the links to view the actual documentation for the [cantino/huginn](https://github.com/cantino/huginn/tree/master/docker/multi-process) or [cantino/huginn-single-process](https://github.com/cantino/huginn/tree/master/docker/single-process) image. Help us getting the bug fixed which is causing this inconvenience by commenting on [this issue](https://github.com/docker/hub-feedback/issues/467)
+
 ![Huginn](https://raw.github.com/cantino/huginn/master/media/huginn-logo.png "Your agents are standing by.")
 
 -----
@@ -6,7 +8,7 @@
 
 Huginn is a system for building agents that perform automated tasks for you online.  They can read the web, watch for events, and take actions on your behalf.  Huginn's Agents create and consume events, propagating them along a directed graph.  Think of it as a hackable Yahoo! Pipes plus IFTTT on your own server.  You always know who has your data.  You do.
 
-![the origin of the name](doc/imgs/the-name.png)
+![the origin of the name](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/the-name.png)
 
 #### Here are some of the things that you can do with Huginn:
 
@@ -41,21 +43,21 @@ Please checkout the [Huginn Introductory Screencast](http://vimeo.com/61976251)!
 
 And now, some example screenshots.  Below them are instructions to get you started.
 
-![Example list of agents](doc/imgs/your-agents.png)
+![Example list of agents](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/your-agents.png)
 
-![Event flow diagram](doc/imgs/diagram.png)
+![Event flow diagram](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/diagram.png)
 
-![Detecting peaks in Twitter](doc/imgs/peaks.png)
+![Detecting peaks in Twitter](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/peaks.png)
 
-![Logging your location over time](doc/imgs/my-locations.png)
+![Logging your location over time](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/my-locations.png)
 
-![Making a new agent](doc/imgs/new-agent.png)
+![Making a new agent](https://raw.githubusercontent.com/cantino/huginn/master/doc/imgs/new-agent.png)
 
 ## Getting Started
 
 ### Docker
 
-The quickest and easiest way to check out Huginn is to use the offical Docker image. Have a look at the [documentation](./doc/docker/install.md).
+The quickest and easiest way to check out Huginn is to use the offical Docker image. Have a look at the [documentation](https://github.com/cantino/huginn/blob/master/doc/docker/install.md).
 
 ### Local Installation
 
@@ -82,13 +84,20 @@ If you need more detailed instructions, see the [Novice setup guide][novice-setu
 
 ### Develop
 
-All agents have specs! Test all specs with `bundle exec rspec`, or test a specific spec with `bundle exec rspec path/to/specific/spec.rb`. Read more about rspec for rails [here](https://github.com/rspec/rspec-rails).
+All agents have specs! And there's also acceptance tests that simulate running Huginn in a headless browser. 
+
+* Install PhantomJS 2.1.1 or greater: 
+  * Using [Node Package Manager](https://www.npmjs.com/): `npm install phantomjs` 
+  * Using [Homebrew](http://brew.sh/) on OSX `brew install phantomjs`
+* Run all specs with `bundle exec rspec`
+* Run a specific spec with `bundle exec rspec path/to/specific/test_spec.rb`. 
+* Read more about rspec for rails [here](https://github.com/rspec/rspec-rails).
 
 ## Deployment
 
 ### Heroku
 
-Try Huginn on Heroku: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) (Takes a few minutes to setup. Read the [documentation](./doc/heroku/install.md) while you are waiting and be sure to click 'View it' after launch!)
+Try Huginn on Heroku: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy) (Takes a few minutes to setup. Read the [documentation](https://github.com/cantino/huginn/blob/master/doc/heroku/install.md) while you are waiting and be sure to click 'View it' after launch!)
 
 Huginn works on the free version of Heroku [with significant limitations](https://github.com/cantino/huginn/blob/master/doc/heroku/install.md). For non-experimental use, we strongly recommend Heroku's cheapest paid plan or our Docker container.
 
@@ -96,7 +105,7 @@ Please see [the Huginn Wiki](https://github.com/cantino/huginn/wiki#deploying-hu
 
 ### Manual installation on any server
 
-Have a look at the [installation guide](./doc/manual/README.md).
+Have a look at the [installation guide](https://github.com/cantino/huginn/blob/master/doc/manual/README.md).
 
 ### Optional Setup
 
